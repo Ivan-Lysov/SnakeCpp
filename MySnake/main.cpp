@@ -190,6 +190,10 @@ void field::update(Snake& snake, Food& food) {
 		else if (key == 'd' || key == 'D') {
 			newDirection = { 1, 0 };
 		}
+		else if (key == 'p' || key == 'P') {
+			std::cout << "Paused. Press 'p' to continue" << std::endl;
+			while (_getch() != 'p');
+		}
 		if (newDirection.first + snake.direction.first != 0 ||
 			newDirection.second + snake.direction.second != 0) {
 			snake.direction = newDirection;
@@ -221,5 +225,6 @@ int main() {
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(200));
 	}
+	system("pause");
 	return 0;
 }
