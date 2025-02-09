@@ -6,10 +6,10 @@ Classic console snake. In the future I want to add support for the SFML library.
 Navigate the snake using keys W, A, S, D collect food to grow, and avoid collisions!
 
 ## 🕹 Controls
-W – Move up
-S – Move down
-A – Move left
-D – Move right
+- W – Move up
+- S – Move down
+- A – Move left
+- D – Move right
 
 ## 📜 License
 MIT License. See [LICENSE](LICENSE) for details.
