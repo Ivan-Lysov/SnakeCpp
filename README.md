@@ -10,6 +10,36 @@ Navigate the snake using keys W, A, S, D collect food to grow, and avoid collisi
 - S – Move down
 - A – Move left
 - D – Move right
+- P - Pause
 
+## Installation Guide
+1. Clone the repository  
+   ```sh
+   git clone https://github.com/Ivan-Lysov/SnakeCpp
+   ```
+2. Go to the MySnake folder  
+   ```sh
+   cd SnakeCpp
+   ```
+3. Go to the branch `win-console-version`  
+   ```sh
+   git checkout win-console-version
+   ```
+4. Compile executable file
+   ```sh
+   g++ -o snake_game.exe main.cpp -Iinclude -static -O1
+   ```
+   4.1 Compilation options  
+   **Optimization levels:**  
+   - **O0** — no optimization (for debugging).    
+   - **O1** — basic optimization.  
+   - **O2** — aggressive speed optimization.  
+   - **O3** — maximum optimization.  
+   - **Os** — optimization by file size.
+ 5. Run the executable file
+    ```sh
+      ./snake_game.exe
+    ```
 ## 📜 License
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License  
+See [LICENSE](LICENSE) for details.
